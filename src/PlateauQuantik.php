@@ -113,11 +113,11 @@
 
         private static function checkBounds(int $rowNum, int $colNum): void {
             if ( $rowNum < 0 || $rowNum >= self::NB_ROWS ||
-                 $colNum < 0 || $colNum >= self::NB_COLS   ) throw new \Exception("Coordonnées hors du plateau\n");
+                 $colNum < 0 || $colNum >= self::NB_COLS   ) throw new \Exception("les coordonées ne sont pas dans  plateau\n");
         }
 
         private static function checkDir(int $dir) {
-            if ( $dir < 0 && $dir > self::SE ) throw new \Exception("Direction non valide\n");
+            if ( $dir < 0 && $dir > self::SE ) throw new \Exception("Direction incorect\n");
         }
     }
 ?>

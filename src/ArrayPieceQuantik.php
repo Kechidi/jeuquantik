@@ -75,7 +75,7 @@
         }
         
         private function checkPos(int $pos) {
-            if ( $pos < 0 || $pos >= $this->taille ) throw new \Exception("Les positions des pieces ne sont pas valide");
+            if ( $pos < 0 || $pos >= $this->taille ) throw new \Exception("Les positions des pieces ne sont pas valides");
         }
         
     }

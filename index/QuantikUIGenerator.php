@@ -40,7 +40,7 @@ class QuantikUIGenerator
         header("HTTP/1.1 400 Bad Request");
         $resultat = self::getDebutHTML("400 Bad Request");
         $resultat .= "<h2>$message</h2>";
-        $resultat .= "<p><br /><br /><br /><a href='quantik.php?reset'>Retour à l'accueil...</a></p>";
+        $resultat .= "<p><br /><br /><br /><a href='quantik.php?reset'>acceuil</a></p>";
         $resultat .= self::getFinHTML();
         return $resultat;
     }
@@ -150,7 +150,7 @@ class QuantikUIGenerator
         $piecesActives = $lesPiecesDispos[$couleurActive];
         array_splice($lesPiecesDispos, $couleurActive, 1);
         $pieceNonActive = array_shift($lesPiecesDispos);
-        //var_dump($pieceNonActive);
+
         
         $pieceAPoser = $piecesActives->getPieceQuantik($posSelection);
         
